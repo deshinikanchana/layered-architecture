@@ -54,6 +54,10 @@ public class ViewOrderFormController {
         colQty.setCellValueFactory(new PropertyValueFactory<>("qty"));
 
         initUI();
+        loadCmb();
+    }
+
+    private void loadCmb() throws ClassNotFoundException {
         loadData("date",cmbDate);
         loadData("customerId",cmbCusId);
         loadData("oid",cmbOid);
